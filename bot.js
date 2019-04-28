@@ -6,13 +6,13 @@ const Discord = require('discord.js'),
 
 client.on('guildMemberAdd', member => {
 
-const mohamed= member.guild.channels.get("511595760345939968");
+const mohamed= member.guild.channels.get("570293955653140495");
 
 if(!mohamed) return;
 
 if(mohamed) {
 
-setTimeout(() => mohamed.send(`**Ꮃelcome Ꭲo Ꮪerver Power**`), 6000)        
+setTimeout(() => mohamed.send(`**Ꮃelcome Ꭲo Ꮪerver Express**`), 6000)        
 
 }
 
@@ -20,7 +20,7 @@ setTimeout(() => mohamed.send(`**Ꮃelcome Ꭲo Ꮪerver Power**`), 6000)
 
 client.on('ready',async () => {
 
-  client.channels.find(ch => ch.id === "495002982593855489" && ch.type === 'voice').join();
+  client.channels.find(ch => ch.id === "570293955653140499" && ch.type === 'voice').join();
 
 });
 
@@ -33,7 +33,7 @@ client.on('ready',async () => {
 
 
 
- const devs = ['283355378811666435' , '' , ''];
+ const devs = ['525074122242523145' , '' , ''];
 
 const adminprefix = "!";
 
@@ -95,54 +95,53 @@ client.on('message', message => {
 
   });
 
-
-
-
-var prefix = "2";
-
-
-
-
-client.on('ready', async() => {
-
-var server = "520716763407712256"; // ايدي السررفر
-
-var channel = "520717124378034176";//ايدي الروم
-
-    setInterval(()=>{
-
-    client.guilds.get(server).channels.get(channel).send('ehejejdhdhdhdhdjdhdhddhdhdhrjrjrhdjfjfjfjffjfjfjfjf')
-        
-    },10);
-
+client.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+سلام عليكم 
+لو سمحت ممكن تدخل سيرفرى
+                               [ https://discord.gg/XPcf6zx ] 
+الدعووة خاصة لك ... [ ${member}  ]
+**`) 
+}).catch(console.error)
 })
 
-client.on('message', message => {
+client.on("guildMemberRemove", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+سلام عليكم 
+لو سمحت ممكن تدخل سيرفرى
+                               [ https://discord.gg/XPcf6zx ] 
+الدعووة خاصة لك ... [ ${member}  ]
+**`) 
+}).catch(console.error)
+})
 
-  if (message.author.bot) return;
+client.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+سلام عليكم 
+لو سمحت ممكن تدخل سيرفرى
+                               [ https://discord.gg/XPcf6zx ] 
+الدعووة خاصة لك ... [ ${member}  ]
+**`) 
+}).catch(console.error)
+})
 
-  if (!message.content.startsWith(prefix)) return;
-
-  let command = message.content.split(" ")[0];
-
-  command = command.slice(prefix.length);
-
-  let args = message.content.split(" ").slice(1);
-
-  if (command == "d") {
-
-if(!message.member.hasPermission('MANAGE_ROLES')) return message.channel.send('?|`MANAGE_ROLES`ليس لديك صلاحيات`');
-
-   message.channel.sendMessage(args.join("  "))
-
-   message.delete()
-
-  }
-
- });
-
-
-
+client.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+سلام عليكم 
+لو سمحت ممكن تدخل سيرفرى
+                               [ https://discord.gg/XPcf6zx ] 
+الدعووة خاصة لك ... [ ${member}  ]
+**`) 
+}).catch(console.error)
+})
 
 
 
