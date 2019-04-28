@@ -1,8 +1,12 @@
 const Discord = require('discord.js'),
 const client = new Discord.Client();
 const client2 = new Discord.Client();
+const client3 = new Discord.Client();
+const client4 = new Discord.Client();
+const client5 = new Discord.Client();
+    
 
-    console.log("تم التشغيل,");
+console.log("تم التشغيل,");
 
 client.on('guildMemberAdd', member => {
 
