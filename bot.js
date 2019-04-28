@@ -1,6 +1,6 @@
 const Discord = require('discord.js'),
-
-    client = new Discord.Client({sisableEveryone: true})
+const client = new Discord.Client();
+const client2 = new Discord.Client();
 
     console.log("تم التشغيل,");
 
@@ -131,7 +131,7 @@ client.on("guildMemberAdd", member => {
 }).catch(console.error)
 })
 
-client.on("guildMemberAdd", member => {
+client2.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
   return channel.send(` 
 **
@@ -144,6 +144,130 @@ client.on("guildMemberAdd", member => {
 })
 
 
+client2.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+سلام عليكم 
+لو سمحت ممكن تدخل سيرفرى
+                               [ https://discord.gg/XPcf6zx ] 
+الدعووة خاصة لك ... [ ${member}  ]
+**`) 
+}).catch(console.error)
+})
 
+client2.on("guildMemberRemove", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+سلام عليكم 
+لو سمحت ممكن تدخل سيرفرى
+                               [ https://discord.gg/XPcf6zx ] 
+الدعووة خاصة لك ... [ ${member}  ]
+**`) 
+}).catch(console.error)
+})
+
+client3.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+سلام عليكم 
+لو سمحت ممكن تدخل سيرفرى
+                               [ https://discord.gg/XPcf6zx ] 
+الدعووة خاصة لك ... [ ${member}  ]
+**`) 
+}).catch(console.error)
+})
+
+client3.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+سلام عليكم 
+لو سمحت ممكن تدخل سيرفرى
+                               [ https://discord.gg/XPcf6zx ] 
+الدعووة خاصة لك ... [ ${member}  ]
+**`) 
+}).catch(console.error)
+})
+
+client4.on("guildMemberRemove", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+سلام عليكم 
+لو سمحت ممكن تدخل سيرفرى
+                               [ https://discord.gg/XPcf6zx ] 
+الدعووة خاصة لك ... [ ${member}  ]
+**`) 
+}).catch(console.error)
+})
+
+client4.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+سلام عليكم 
+لو سمحت ممكن تدخل سيرفرى
+                               [ https://discord.gg/XPcf6zx ] 
+الدعووة خاصة لك ... [ ${member}  ]
+**`) 
+}).catch(console.error)
+})
+
+//
+
+client5.on("guildMemberRemove", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+سلام عليكم 
+لو سمحت ممكن تدخل سيرفرى
+                               [ https://discord.gg/XPcf6zx ] 
+الدعووة خاصة لك ... [ ${member}  ]
+**`) 
+}).catch(console.error)
+})
+
+client5.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+سلام عليكم 
+لو سمحت ممكن تدخل سيرفرى
+                               [ https://discord.gg/XPcf6zx ] 
+الدعووة خاصة لك ... [ ${member}  ]
+**`) 
+}).catch(console.error)
+})
+///////
+client5.on("guildMemberRemove", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+سلام عليكم 
+لو سمحت ممكن تدخل سيرفرى
+                               [ https://discord.gg/XPcf6zx ] 
+الدعووة خاصة لك ... [ ${member}  ]
+**`) 
+}).catch(console.error)
+})
+
+client5.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(` 
+**
+سلام عليكم 
+لو سمحت ممكن تدخل سيرفرى
+                               [ https://discord.gg/XPcf6zx ] 
+الدعووة خاصة لك ... [ ${member}  ]
+**`) 
+}).catch(console.error)
+})
 
 client.login(process.env.BOT_TOKEN);
+client2.login(process.env.BOT_TOKEN2);
+client3.login(process.env.BOT_TOKEN3);
+client4.login(process.env.BOT_TOKEN4);
+client5.login(process.env.BOT_TOKEN5);
