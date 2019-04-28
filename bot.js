@@ -1,6 +1,5 @@
 const Discord = require('discord.js'),
-const client = new Discord.Client();
-    
+    client = new Discord.Client({sisableEveryone: true})
 
 console.log("تم التشغيل,");
 
