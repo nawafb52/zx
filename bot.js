@@ -8,7 +8,7 @@ client.on("guildMemberAdd", member => {
 رمضان كريم يارب تكون سنة سعيدة عليك
 Welcome To  Vegas.
 [ https://discord.gg/xMHym5W ]
-**`) 
+**`)
 }).catch(console.error)
 })
 client.on("guildMemberAdd", member => {
@@ -17,7 +17,7 @@ client.on("guildMemberAdd", member => {
 ي تُرى الضحكه النابته على وجهك , مشتل من الجنه ولا جرعه من الورد ، تعال سمعنا صوتك ♥ 
 Welcome To  Vegas.**
 https://discord.gg/gF87Ukm
-**`) 
+**`) , 1000)
 }).catch(console.error)
 })
 client.on("guildMemberAdd", member => {
@@ -25,7 +25,7 @@ client.on("guildMemberAdd", member => {
   return setTimeout(() => channel.send(`
  😘😘😍😍😍💜💜💙💛💛💜💕👊✌✌✌حياك ياقلبي
 https://discord.gg/JRV6zX6
-**`) 
+**`), 10000)
 }).catch(console.error)
 })
 client.on("guildMemberAdd", member => {
@@ -34,7 +34,7 @@ client.on("guildMemberAdd", member => {
 وحأولوا أنتم أن تبحثوا عنها خلف غيوم الأيام.. كي لا تضيع سنواتكم في ظلمة الإنتظار. 🕊 
 حياكم بسيرفير Vegas. 
 رابط ☘ | https://discord.gg/xMHym5W ** 
-`), 8000)
+`), 5000)
  
 }).catch(console.error)
 })
