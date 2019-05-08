@@ -9,8 +9,8 @@ client.on("guildMemberAdd", member => {
 Welcome To  Vegas.
 [ https://discord.gg/xMHym5W ]
 **`)
-}).catch(console.error)
-})
+}
+});
 client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
   return setTimeout(() => channel.send(`**
